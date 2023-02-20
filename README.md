@@ -1,6 +1,7 @@
 # pagila-hw
 [![](https://github.com/mariagerges/pagila-hw-maria/workflows/tests/badge.svg)](https://github.com/mariagerges/pagila-hw-maria/actions?query=workflow%3Atests)
 
+this is a data science project
 ## Background
 
 [Pagila](https://github.com/devrimgunduz/pagila) is a standard example database for postgresql.
