@@ -5,7 +5,11 @@
 
 CREATE OR REPLACE FUNCTION list_category(TEXT) RETURNS TABLE(title TEXT) AS
 $$
--- FIXME: implementation goes here
+SELECT film.title
+FROM film INNER JOIN film_category AS film_cat ON film.film_id = film_cat.film_id
+INNER JOIN category AS cat ON film_cat.category_id = cat.category_id
+WHERE cat.name ILIKE ($1)
+ORDER BY film.title;
 $$
 LANGUAGE SQL
 IMMUTABLE
